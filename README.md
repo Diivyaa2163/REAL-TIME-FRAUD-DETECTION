@@ -10,7 +10,7 @@ An educational engineering project for building a real-time transaction fraud-de
 - [x] Spring Boot decision API scaffold generated.
 - [x] Initial Maven test passed locally.
 - [x] Repository foundation committed and pushed to GitHub.
-- [ ] Automated tests running in GitHub Actions.
+- [x] Automated tests running in GitHub Actions.
 - [ ] Transaction request and response contract implemented.
 - [ ] Deterministic fraud rules and decision explanations implemented.
 - [ ] Persistent audit records and historical evaluation implemented.
