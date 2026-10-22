@@ -1,0 +1,37 @@
+name: Java CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-test:
+    name: Build and test decision API
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+
+      - name: Set up JDK 25
+        uses: actions/setup-java@v6
+        with:
+          distribution: temurin
+          java-version: '25'
+          cache: maven
+          cache-dependency-path: |
+            services/decision-api/pom.xml
+            services/decision-api/.mvn/wrapper/maven-wrapper.properties
+
+      - name: Display Java version
+        run: java --version
+
+      - name: Run Maven tests
+        working-directory: services/decision-api
+        run: ./mvnw --batch-mode --no-transfer-progress test

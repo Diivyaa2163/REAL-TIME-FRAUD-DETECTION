@@ -1,4 +1,7 @@
 # Real-Time Fraud Detection System
+[![Java CI](https://github.com/Diivyaa2163/REAL-TIME-FRAUD-DETECTION/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/Diivyaa2163/REAL-TIME-FRAUD-DETECTION/actions/workflows/ci.yml)
+
+
 
 An educational engineering project for building a real-time transaction fraud-detection platform. The project will evolve incrementally from a tested API scaffold to explainable risk decisions, behavioural features, and model-assisted scoring.
 
@@ -6,7 +9,7 @@ An educational engineering project for building a real-time transaction fraud-de
 
 - [x] Spring Boot decision API scaffold generated.
 - [x] Initial Maven test passed locally.
-- [ ] Repository foundation committed and pushed to GitHub.
+- [x] Repository foundation committed and pushed to GitHub.
 - [ ] Automated tests running in GitHub Actions.
 - [ ] Transaction request and response contract implemented.
 - [ ] Deterministic fraud rules and decision explanations implemented.
