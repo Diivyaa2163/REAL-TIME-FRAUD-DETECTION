@@ -1,0 +1,42 @@
+# Java / Maven build output
+**/target/
+*.class
+
+# Python environments and generated files
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Node dependencies
+node_modules/
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+
+# Generated data, logs and local databases
+data/raw/
+data/processed/
+artifacts/
+logs/
+*.log
+*.sqlite3
+*.db
+
+# Generated model files
+models/*.joblib
+models/*.pkl
+models/*.pickle
+models/*.onnx
+
+# IDE and operating system
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini

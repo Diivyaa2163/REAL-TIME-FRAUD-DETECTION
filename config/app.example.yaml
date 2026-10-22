@@ -1,0 +1,20 @@
+app:
+  name: real-time-fraud-detection
+  environment: local
+
+api:
+  host: 127.0.0.1
+  port: 8080
+
+logging:
+  level: INFO
+
+fraud:
+  mode: rules
+  review_threshold: 0.70 # Placeholder only; not a validated threshold
+
+streaming:
+  enabled: false
+  bootstrap_servers: localhost:9092
+  transactions_topic: transactions
+  decisions_topic: fraud-decisions
